@@ -1,0 +1,63 @@
+@import "tailwindcss";
+#root{
+     font-family: "Poppins", sans-serif;
+     color: #050404;
+}
+@layer base{
+
+    li{ 
+        @apply list-none text-[24px] font-semibold text-[#4B4949] cursor-pointer
+        hover:text-[#6975DD]
+    }
+    h1{
+        @apply text-[70px] font-semibold 
+    }
+    h2{
+       @apply text-[42.26px] font-semibold 
+    }
+    h3{
+        @apply text-[26.66px] font-semibold
+    }
+
+    p{
+        @apply text-[26.11px] text-[#4B5563] 
+    }
+
+   header{
+    @apply max-w-[2000px] mx-auto w-full 
+   }
+   main {
+    @apply max-w-[2000px] mx-auto
+   }
+   footer{
+    @apply h-auto py-10 max-w-[2000px] mx-auto w-full bg-[#111827] px-5 text-[#8F9296]
+   }
+   
+
+   section{
+    @apply px-10
+   };
+
+   
+
+   
+
+
+}
+
+
+@layer components{
+   .primary-btn{
+    @apply  text-[24px] bg-gradient-to-r from-[#6975DD] to-[#754EA7] text-white font-semibold px-8 rounded-full px-8 py-3 cursor-pointer
+    transition-all duration-200 hover:-translate-y-2
+    ;
+   }
+  @layer components {
+  .secondary-btn {
+    @apply  text-[24px] text-[#754EA7] border-4  inline-block cursor-pointer px-8 py-3 rounded-full font-semibold transition-all duration-200 hover:-translate-y-2 
+  }
+  }
+
+
+
+}
